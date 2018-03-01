@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 01, 2018 at 07:12 AM
+-- Generation Time: Mar 01, 2018 at 07:46 PM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 7.1.7
 
@@ -36,6 +36,14 @@ CREATE TABLE `user` (
   `gender` varchar(10) NOT NULL,
   `dob` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`name`, `email`, `user_name`, `password`, `gender`, `dob`) VALUES
+('Ariful-Alam', 'arifulalamarif@rocketmail.com', 'Arif', 'asd', 'male', '(27/01/1996)'),
+('Nishat', 'nishat@gmail.com', 'Nishat', 'n', 'male', '(10/21/1996)');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

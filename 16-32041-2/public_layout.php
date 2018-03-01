@@ -5,13 +5,13 @@
                 <tr>
                     <td>
                         <a href="#">
-                            <img height="48" src="../image/logo.png">
+                            <img height="48" src='"pic/"."profile.jpg"'>
                         </a>
                     </td>
                     <td align="right">
                         <a href="#">Home</a>&nbsp;|
-                        <a href="#">Login</a>&nbsp;|
-                        <a href="#">Registration</a>
+                        <a href="login.php">Login</a>&nbsp;|
+                        <a href="registration.php">Registration</a>
                     </td>
                 </tr>
             </table>

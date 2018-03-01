@@ -98,21 +98,15 @@ if(isset($_POST['submit']))
 		$pass = $_POST['pass'];
 		$dob = "(".$_POST['date']."/".$_POST['month']."/".$_POST['year'].")";
 		$gender = $_POST['gender'];
-		echo $name."</br>";
-		echo $email."</br>";
-		echo $uname."</br>";
-		echo $pass."</br>";
-		echo $dob."</br>";
-		echo $gender."</br>";
-		// $conn = mysqli_connect("localhost","root","","reg_login");
-		// $sql = "insert into user values('".$name."','".$email."','".$uname."','".$password."','".$gender."','".$dob."')";
-		// $result = mysqli_query($conn, $sql);
-		// mysqli_close($conn);
-		// if($result){
-			// header("Location: login.php");
-		// }else{
-			// echo "<br/> SQL Error<br/>".mysqli_error($conn);
-		// }
+		$conn = mysqli_connect("localhost","root","","reg_login");
+		$sql = "insert into user values('".$name."','".$email."','".$uname."','".$pass."','".$gender."','".$dob."')";
+		$result = mysqli_query($conn, $sql);
+		mysqli_close($conn);
+		if($result){
+			header("Location: login.php");
+		}else{
+			echo "<br/> SQL Error<br/>".mysqli_error($conn);
+		}
 	}
 }
 ?>
